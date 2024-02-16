@@ -1,0 +1,10 @@
+.tweet-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.tweet-card img {
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+}
