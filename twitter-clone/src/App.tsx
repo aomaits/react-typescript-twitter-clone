@@ -46,8 +46,3 @@ function App() {
 }
 
 export default App;
-
-/*
-2. Fill out data above
-3. Read the data above and render 1 tweet per object
-*/
