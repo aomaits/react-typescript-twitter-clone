@@ -16,9 +16,11 @@ const Tweet = (props: TweetProps) => {
     <div className='tweet-card'>
 
       <img src={props.avatarUrl} />
-      <div>
-        <h2>{props.name}</h2>
-        <h3>{props.date.toLocaleDateString()} </h3>
+      <div className='tweet-card-content'>
+        <div className='tweet-card-header'>
+          <h2>{props.name}</h2>
+          <h3>| {props.date.toLocaleDateString()} </h3>
+        </div>
         <p>{props.text} </p>
       </div>
     </div>

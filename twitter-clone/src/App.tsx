@@ -28,7 +28,7 @@ const data: TweetProps[] = [
 function App() {
   return (
     <div className="App">
-      <Tweet name={"Elon Musk"} date={new Date("1/1/24")} avatarUrl='https://placekitten.com/300/300' text="Elon says stuff" />
+      <Tweet name={"Elon Musk"} date={new Date("1/1/24")} avatarUrl='https://placekitten.com/300/300' text="Elon says stuff. Elon says more stuff. Elon says even more stuff. Elon says some other stuff." />
     </div>
   );
 }
