@@ -3,6 +3,7 @@
   flex-direction: row;
   background-color: rgb(78, 73, 73);
   color: white;
+  padding: 1%;
 }
 
 .tweet-card img {
@@ -22,7 +23,7 @@
 }
 
 .tweet-card-content h2 {
-  font-size:larger;
+  font-size:large;
 
 }
 
@@ -33,4 +34,5 @@
 
 .tweet-card-content p {
   margin-top: 2%;
+  text-align: left;
 }

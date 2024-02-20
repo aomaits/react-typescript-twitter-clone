@@ -1,34 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Tweet, { TweetProps } from './components/Tweet';
 import 'reset-css';
 
 const data: TweetProps[] = [
   {
-    name: "",
-    text: "",
-    avatarUrl: "",
-    date: new Date(),
+    name: "President Merkin Muffley",
+    text: "Gentlemen, you can't fight in here! This is the War Room.",
+    avatarUrl: "https://placekitten.com/300/300",
+    date: new Date("1/1/24"),
   },
   {
-    name: "",
-    text: "",
-    avatarUrl: "",
-    date: new Date(),
+    name: "The Dude",
+    text: "I do mind, the Dude minds. This will not stand, ya know, this aggression will not stand, man.",
+    avatarUrl: "https://placekitten.com/300/300",
+    date: new Date("1/6/24"),
   },
   {
-    name: "",
-    text: "",
-    avatarUrl: "",
-    date: new Date(),
+    name: "Norman Bates",
+    text: "A boy's best friend is his mother.",
+    avatarUrl: "https://placekitten.com/300/300",
+    date: new Date("1/3/24"),
   },
 ]
 
 function App() {
+
+  const sortedByDate = [...data].sort((a, b) => a.date.getTime() - b.date.getTime());
+
+  const tweets = sortedByDate.map((tweet, index) => (
+    <Tweet
+    key={index}
+    name={tweet.name}
+    date={tweet.date}
+    avatarUrl={tweet.avatarUrl}
+    text={tweet.text}
+  />
+  ));
+
   return (
     <div className="App">
-      <Tweet name={"Elon Musk"} date={new Date("1/1/24")} avatarUrl='https://placekitten.com/300/300' text="Elon says stuff. Elon says more stuff. Elon says even more stuff. Elon says some other stuff." />
+      {tweets}
     </div>
   );
 }
@@ -36,7 +48,6 @@ function App() {
 export default App;
 
 /*
-1. Finish styling of tweet card according to specs in email
 2. Fill out data above
 3. Read the data above and render 1 tweet per object
 */

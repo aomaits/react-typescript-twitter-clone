@@ -11,7 +11,7 @@ export type TweetProps = {
 }
 
 const Tweet = (props: TweetProps) => {
-
+  
   return (
     <div className='tweet-card'>
 
