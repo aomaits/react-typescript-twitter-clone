@@ -28,3 +28,11 @@ const Tweet = (props: TweetProps) => {
 }
 
 export default Tweet;
+
+/*
+Building before introducing interactivity: 
+- Add comments to a tweet and render them (collapsed) specifically below that tweet
+- Add a like counter
+- Add a repost counter
+- Add a comment counter
+*/
